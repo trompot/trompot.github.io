@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>高専祭2018</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Vue.js -->
-    <script src="js/vue.min.js"></script>
+        <!-- <base href=""> -->
+        
+        <title>高専祭2018</title>
 
-</head>
-<body>
-    <div id="todoApp">
-  <h2 v-bind:style="fontStyle">{{ title }}</h2>
-  <input type="text" v-model="todo" v-on:keyup.enter="addTodo">
-  <div>
-    <div v-for="t in todos" :key="t.id" 
-         v-bind:class="['todo-default', t.doing ? 'todo-doing' : '']"
-         v-on:click="begin(t)">
-      {{t.name}}
-    </div>
-  </div>
-</div>
+        <!-- Vue.js -->
+        <script src="js/vue.min.js"></script>
 
+        <!-- azios -->
+        <script src="js/axios.min.js"></script>
 
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>奈良高専高専祭2018</h1>
+            </header>
+            <nav>
+                <ul><a href="/">HOME</a></ul>
+            </nav>
+        </div>
+        <!-- <div>
+            <table id="app">
+                <thead>
+                    <td>出店</td>
+                    <td>屋台</td>
+                    <td>価格</td>
+                </thead>
+                <tbody v-for="(value, key) in times">
+                    <td>{{ key }}</td>
+                    <td>{{ value[0].title }}</td>
+                    <td>{{ value[1].note }}</td>
+                </tbody>
+            </table>
+        </div> -->
+        <script src="js/main.js"></script>
+        <table id="app">
+            <thead>
+                <td>項目</td>
+                <td>データタイプ</td>
+                <td>データ</td>
+            </thead>
+            <tbody v-for="(value, key) in infos">
+                <td>{{ key }}</td>
+                <td>{{ value[0].type }}</td>
+                <td>{{ value[0].value }}</td>
+            </body>
+        </table>
 
-    <!-- main js -->
-    <script src="js/main.js"></script>
-</body>
+        <footer>
+            <small>&copy;2018 高専祭実行委員会</small>
+        </footer>
+        <!-- main js -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

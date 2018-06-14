@@ -1,24 +1,15 @@
-var app = new Vue({
-    el: '#todoApp',
-    data: {
-        title: "Welcome to Vue.js",
-      fontStyle: {
-          fontSize: "20px",
-      },
-      todo: "",
-      todos: []
-    },
-    methods: {
-      addTodo: function() {
-          this.todos.push({
-            id: this.todos.length,
-            name: this.todo,
-          doing: false
-        })
-        this.todo = ""
-      },
-      begin: function(todo){
-          todo.doing = !todo.doing;
-      }
-    }
-  })
+// タイムテーブル
+axios.get('http://localhost:8080/json/timetable.json').then(function (response) {
+    initVue(response.data);
+}).catch(function (error) {
+    console.log(error);
+});
+         
+function initVue(info){
+    new Vue({
+        el: '#app',
+        data: {
+            infos: info["http://uedayou.net/loa/東京都千代田区永田町一丁目7"]
+        }
+    })
+}
