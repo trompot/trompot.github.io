@@ -1,72 +1,18 @@
 {
-    "http://uedayou.net/loa/東京都千代田区千代田1": {
-        "http://imi.go.jp/ns/core/rdf#丁目": [
+    "timetable": {
+        "11:00": [
             {
-                "type": "literal", 
-                "value": "千代田"
-            }
-        ], 
-        "http://imi.go.jp/ns/core/rdf#市区町村": [
-            {
-                "type": "literal", 
-                "value": "千代田区"
-            }
-        ], 
-        "http://imi.go.jp/ns/core/rdf#番地": [
-            {
-                "type": "literal", 
-                "value": "1"
-            }
-        ], 
-        "http://imi.go.jp/ns/core/rdf#都道府県": [
-            {
-                "type": "literal", 
-                "value": "東京都"
-            }
-        ], 
-        "http://purl.org/dc/terms/references": [
-            {
-                "type": "uri", 
-                "value": "http://geonames.jp/resource/東京都千代田区千代田"
-            }
-        ], 
-        "http://schema.org/image": [
-            {
-                "type": "uri", 
-                "value": "http://uedayou.net/loa/東京都千代田区千代田1.jpg"
-            }
-        ], 
-        "http://www.geonames.org/ontology#parentFeature": [
-            {
-                "type": "uri", 
-                "value": "http://uedayou.net/loa/東京都千代田区千代田"
-            }
-        ], 
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-            {
-                "type": "uri", 
-                "value": "http://imi.go.jp/ns/core/rdf#住所型"
-            }
-        ], 
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "type": "literal", 
-                "value": "東京都千代田区千代田1"
-            }
-        ], 
-        "http://www.w3.org/2003/01/geo/wgs84_pos#lat": [
-            {
-                "datatype": "http://www.w3.org/2001/XMLSchema#double", 
-                "type": "literal", 
-                "value": "35.68433"
-            }
-        ], 
-        "http://www.w3.org/2003/01/geo/wgs84_pos#long": [
-            {
-                "datatype": "http://www.w3.org/2001/XMLSchema#double", 
-                "type": "literal", 
-                "value": "139.752391"
+                "value": "開会式", 
+                "note": "閉会式予行含む"
             }
         ]
+    },
+    "shop":{
+        "どっかのクラス" : [
+            {
+                "name" : "コピー",
+                "note" : "へへへ"
+            }
+        ] 
     }
 }

@@ -39,19 +39,30 @@
                 </tbody>
             </table>
         </div> -->
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
         <table id="app">
-            <thead>
-                <td>項目</td>
-                <td>データタイプ</td>
-                <td>データ</td>
-            </thead>
-            <tbody v-for="(value, key) in infos">
-                <td>{{ key }}</td>
-                <td>{{ value[0].type }}</td>
-                <td>{{ value[0].value }}</td>
-            </body>
-        </table>
+                <tr>
+                  <td>時刻</td>
+                  <td>企画</td>
+                </tr>
+                <tr v-for="(value, key) in infos">
+                  <td>{{ key }}</td>
+                  <td>{{ value[0].value }}</td>
+                  <td>{{ value[0].note }}</td>
+                </tr>
+              </table>
+        <table id="shop">
+                <tr>
+                  <td>時刻</td>
+                  <td>企画</td>
+                </tr>
+                <tr v-for="(value, key) in shops">
+                  <td>{{ key }}</td>
+                  <td>{{ value[0].name }}</td>
+                  <td>{{ value[0].note }}</td>
+                </tr>
+              </table>
+              
 
         <footer>
             <small>&copy;2018 高専祭実行委員会</small>
