@@ -13,8 +13,8 @@
         <script src="js/vue.min.js"></script>
 
         <!-- azios -->
-        <script src="js/axios.min.js"></script>
-
+        <!-- <script src="js/axios.min.js"></script> -->
+        <script></script>
     </head>
     <body>
         <div>
@@ -47,8 +47,8 @@
                 </tr>
                 <tr v-for="(value, key) in infos">
                   <td>{{ key }}</td>
-                  <td>{{ value[0].value }}</td>
-                  <td>{{ value[0].note }}</td>
+                  <td>{{ value.value }}</td>
+                  <td>{{ value.note }}</td>
                 </tr>
               </table>
         <table id="shop">

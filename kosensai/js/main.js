@@ -1,11 +1,16 @@
-// タイムテーブル
-axios.get('../json/timetable.json').then(function (response) {
-    initVue(response.data);
-}).catch(function (error) {
-    console.log(error);
-});
-         
-function initVue(info){
+(function (handleload) {
+            var xhr = new XMLHttpRequest;
+          
+            xhr.addEventListener('load', handleload, false);
+            xhr.open('GET', 'json/timetable.json', true);
+            xhr.send(null);
+          }(function handleLoad (event) {
+            var xhr = event.target,
+                obj = JSON.parse(xhr.responseText);
+                console.log(obj.shop);
+                initVue(obj);
+          }));
+          function initVue(info){
     new Vue({
         el: '#app',
         data: {
