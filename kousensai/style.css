@@ -2,18 +2,36 @@ body{
     overflow-x: hidden;
     background-color: black;
 }
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
 
 a{
     outline: none;
-}
-/* IE8+, Chrome */
-/* input, button {
-    outline: 0;
 } */
+/* IE8+, Chrome */
+input, button {
+    outline: 0;
+}
 /* Firefox */
-/* input::-moz-focus-inner, button::-moz-focus-inner {
+input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
-}   */
+}  
 
 /* button */
 .btn-origin{
