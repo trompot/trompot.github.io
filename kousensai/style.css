@@ -6,8 +6,8 @@ body{
 
 /* button */
 .btn-origin{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     -webkit-border-radius: 50%;/* 50%でもOK */
 	-moz-border-radius: 50%;
 	border-radius: 50%;
