@@ -1,71 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
-        <!-- <base href=""> -->
-        
-        <title>高専祭2018</title>
-
-        <!-- Vue.js -->
-        <script src="js/vue.min.js"></script>
-
-        <!-- Bootstrap Umi -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-    </head>
-    <body>
-        <div>
-            <header>
-                <h1>奈良高専高専祭2018</h1>
-            </header>
-            <nav>
-                <ul><a href="/">HOME</a></ul>
-            </nav>
-        </div>
-        <table id="app" class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">時刻</th>
-                    <th scope="col">企画</th>
-                    <th scope="col">内容</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="(value, key) in infos">
-                    <td scope="row">{{ key }}</td>
-                    <td>{{ value.value }}</td>
-                    <td>{{ value.note }}</td>
-                </tr>
-            </tbody>
-        </table>
-        <table id="shop">
-                <tr>
-                  <th>時刻</th>
-                  <th>企画</th>
-                </tr>
-                <tr v-for="(value, key) in shops">
-                  <td>{{ key }}</td>
-                  <td>{{ value[0].name }}</td>
-                  <td>{{ value[0].note }}</td>
-                </tr>
-              </table>
-              
-
-        <footer>
-            <small>&copy;2018 高専祭実行委員会</small>
-        </footer>
-
-        <!-- main js -->
-        <script src="js/main.js"></script>
-
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-        <!-- Bootstrap Umi -->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+</head>
+<body>
+    <div class="logo">
+        <p>奈良高専高専祭</p>
+    </div>
+    <div class="loading"></div>
+    <div class="box"></div>
+</body>
 </html>
