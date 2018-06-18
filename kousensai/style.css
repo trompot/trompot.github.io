@@ -48,9 +48,11 @@ input[type="button"]::focus {
     border: 0px solid #000;
     text-align: center;
 }
-.fas{
-    position: relative;
+.fs-power-white{
     color: white;
+}
+.fs-power-red{
+    color: red;
 }
 
 .top-before{
@@ -66,10 +68,6 @@ input[type="button"]::focus {
     height: 30px;
     background: white;
     animation: loading 5s;
-}
-
-.fs-power-red{
-    color: red;
 }
 
 @keyframes loading{
