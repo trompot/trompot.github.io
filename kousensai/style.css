@@ -1,8 +1,19 @@
 body{
     overflow-x: hidden;
-    background-color: white;
+    background-color: black;
 }
 
+a{
+    outline: none;
+}
+/* IE8+, Chrome */
+input, button {
+    outline: 0;
+}
+/* Firefox */
+input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+}  
 
 /* button */
 .btn-origin{
@@ -12,11 +23,16 @@ body{
 	-moz-border-radius: 50%;
 	border-radius: 50%;
     font-size: 100px;
-    background-color: transparent;  /* 透明 */
-    background-color: brown;
-    border: 0px;
+    /* 透明 */
+    /* background-color: transparent;   */
+    /* background-color: #000000; */
+    border: 0px solid #000;
 }
 
+.top-before{
+    margin-top: 40%;
+    text-align: center;
+}
 
 /* css animation */
 .loading{
