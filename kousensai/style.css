@@ -47,6 +47,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     /* background-color: #000000; */
     background-color: azure;
     border: 0px solid #000;
+    text-align: center;
 }
 
 .top-before{
