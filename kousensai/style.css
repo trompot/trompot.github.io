@@ -42,14 +42,15 @@ input[type="button"]::focus {
 	border-radius: 50%;
     font-size: 50px;
     /* 透明 */
-    /* background-color: transparent;   */
+    background-color: transparent;  
     /* background-color: #000000; */
-    background-color: azure;
+    /* background-color: azure; */
     border: 0px solid #000;
     text-align: center;
 }
 .fas{
     position: relative;
+    color: white;
 }
 
 .top-before{
