@@ -1,0 +1,65 @@
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+a{
+    outline: none;
+}
+/* IE8+, Chrome */
+input, button {
+    outline: 0;
+}
+/* Firefox */
+input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+}  
+
+/* button */
+.btn-origin{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;/* 50%でもOK */
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+    font-size: 50px;
+    /* 透明 */
+    /* background-color: transparent;   */
+    /* background-color: #000000; */
+    border: 0px solid #000;
+}
+
+.top-before{
+    margin-top: 70%;
+    text-align: center;
+}
+
+
+/* css animation */
+.loading{
+    margin-left: -20%;
+    width: 150%;
+    height: 30px;
+    background: white;
+    animation: loading 5s;
+}
+
+.fs-power-red{
+    color: red;
+}
+
+@keyframes loading{
+    0% {
+        width: 5%;
+    }
+    
+    60% {
+        animation-duration: 4.5s;
+        width: 45%;
+    }
+    
+    105% {
+        animation-duration: 0.5s;
+        width: 150%;
+    }
+}
