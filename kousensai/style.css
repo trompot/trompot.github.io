@@ -11,9 +11,9 @@ input, button {
     outline: 0;
 }
 /* Firefox */
-input::-moz-focus-inner, button::-moz-focus-inner {
+/* input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
-}  
+}   */
 
 /* button */
 .btn-origin{
