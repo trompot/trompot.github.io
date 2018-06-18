@@ -7,9 +7,9 @@ a{
     outline: none;
 }
 /* IE8+, Chrome */
-input, button {
+/* input, button {
     outline: 0;
-}
+} */
 /* Firefox */
 /* input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
