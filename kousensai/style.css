@@ -37,6 +37,7 @@ input[type="button"]::focus {
     width: 100px;
     height: 100px;
     font-size: 50px;
+    margin: 0 auto;
     /* 透明 */
     background-color: transparent;  
     /* background-color: #000000; */
