@@ -9,4 +9,5 @@ $(function(){
 $('button').click(function(){
     $(this).toggleClass('fs-power-red');
     $(this).attr('disabled', true);
+    $()
 });
