@@ -55,13 +55,6 @@ input[type="button"]::focus {
     color: red;
 }
 
-.top-before{
-    /* margin-top: 70%; */
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    /* position: relative; */
-}
-
 
 /* css animation */
 .loading{
@@ -74,6 +67,7 @@ input[type="button"]::focus {
 
 @keyframes loading{
     0% {
+        transition-delay: 500ms;
         width: 5%;
     }
     

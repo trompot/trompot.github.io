@@ -1,7 +1,8 @@
 
 $(function(){
-    $('.loading').on('webkitAnimationEnd', function(){
-        $('.loading').remove();
+    $('#load').on('webkitAnimationEnd', function(){
+        $('#load').remove();
+        $('button').remove();
     });
 });
 
@@ -10,4 +11,5 @@ $('button').click(function(){
     $(this).toggleClass('fs-power-red');
     $(this).toggleClass('fs-power-white');
     $(this).attr('disabled', true);
+    $('#load').toggleClass('loading');
 }).css('cursor','pointer');
