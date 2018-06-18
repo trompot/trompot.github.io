@@ -42,7 +42,7 @@ input[type="button"]::focus {
     /* background-color: #000000; */
     /* background-color: azure; */
     border: 0px solid #000;
-    text-align: center;
+    /* text-align: center; */
 }
 .fs-power-white{
     color: white;
