@@ -1,7 +1,7 @@
 
 $(function(){
     $('.loading').on('webkitAnimationEnd', function(){
-        // $('.loading').remove();
+        $('.loading').remove();
     });
 });
 
