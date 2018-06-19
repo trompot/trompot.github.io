@@ -12,49 +12,25 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
 }  
 
-/* input[type="submit"],
-input[type="button"] {
-  border-radius: 0;
-  -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
-  appearance: button;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-input[type="submit"]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration {
-  display: none;
-}
-input[type="submit"]::focus,
-input[type="button"]::focus {
-  outline-offset: -2px;
-} */
-
-
 /* button */
 .btn-origin{
     font-size: 50px;
     margin: 0 auto;
-    /* 透明 */
-    background-color: transparent;  
-    /* background-color: #000000; */
-    /* background-color: azure; */
+    background-color: transparent; 
     border: 0px solid #000;
-    /* text-align: center; */
     position: absolute;
-    top: 100px;
+    top: 70px;
     right: 0;
     bottom: 0;
     left: 0;
 }
+
 .fs-power-white{
     color: white;
 }
 .fs-power-red{
     color: red;
 }
-
 
 /* css animation */
 .loading{
@@ -67,17 +43,16 @@ input[type="button"]::focus {
 
 @keyframes loading{
     0% {
-        transition-delay: 500ms;
-        width: 5%;
+        width: 0%;
+    }
+    15%{
+        width: 0%;
     }
     
-    60% {
-        animation-duration: 4.5s;
-        width: 45%;
+    60%{
+        width: 80%;
     }
-    
     105% {
-        animation-duration: 0.5s;
         width: 100%;
     }
 }
