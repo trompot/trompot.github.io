@@ -109,10 +109,10 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     background-size: cover;
     margin: 10px 10px;
     position: relative;
-    transition: all 300ms 0s ease;
+    transition: all 100ms 0s ease;
 }
 .nav-icon:hover{
-    width: 300px;
+    width: 200px;
     border-radius: 15px;
 }
 .nav-icon a{
@@ -123,6 +123,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     top: 50%;
     left: 50%;
     width: 100%;
+    text-decoration: none;
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
 }
@@ -133,4 +134,26 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 .nav-icon:hover p{
     opacity: 1;
     display:inline;
+}
+
+
+
+/* 背景色設定 */
+.red{
+    background-color: #b20a01;
+}
+.pink{
+    background-color: #ff70a6;
+}
+.orange{
+    background-color: #ff9f1c;
+}
+.blue{
+    background-color: #5ab1bb;
+}
+.yellowgreen{
+    background-color: #849324;
+}
+.green{
+    background-color: #189918;
 }

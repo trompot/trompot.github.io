@@ -1,4 +1,6 @@
-// start画面の処理はここから
+$(".nav-icon").click(function() {
+    location.href = $(this).attr("url");
+});
 
 
 $(function(){
