@@ -8,8 +8,8 @@ $(window).on('touchmove.noScroll', function(e) {
 
 
 $(function(){
-    fire();
-    createFirework();
+    $(".main").css("visibility", "hidden");
+    $("body").css("overflow", "hidden");
     // 時差で発動する
     setTimeout(function(){
         $('button').click();
@@ -21,11 +21,18 @@ $(function(){
         
         // スクロール無効を解除する
         $(window).off('.noScroll');
+        fire();
+        $("body").css("overflow", "scroll");
+        $(".main").css("visibility", "visible");
     });
 });
 
 // 起動ボタンclickされた時の処理
 $('.btn-origin').click(function(){
+    // スクロールを無効にする
+    $(window).on('touchmove.noScroll', function (e) {
+        e.preventDefault();
+    });
     $(this).toggleClass('fs-power-red');
     $(this).toggleClass('fs-power-white');
     
