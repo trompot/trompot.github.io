@@ -1,12 +1,6 @@
 // start画面の処理はここから
 
 
-// スクロールを無効にする
-$(window).on('touchmove.noScroll', function(e) {
-    e.preventDefault();
-});
-
-
 $(function(){
     $(".main").css("visibility", "hidden");
     $("body").css("overflow", "hidden");
@@ -22,7 +16,7 @@ $(function(){
         // スクロール無効を解除する
         $(window).off('.noScroll');
         fire();
-        $("body").css("overflow", "scroll");
+        $("body").css("overflow-y", "scroll");
         $(".main").css("visibility", "visible");
     });
 });
@@ -53,7 +47,6 @@ function step2(){}
 
 // 花火
 function fire(){
-    $(window).off(".noScroll");
     var SCREEN_WIDTH = window.innerWidth,
         SCREEN_HEIGHT = window.innerHeight,
         mousePos = {
