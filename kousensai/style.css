@@ -11,7 +11,7 @@ html, body{
     font-family: 'MyFont';
     /* overflow-x: hidden; */
     overflow-y: hidden;
-    /* background-color: #FFB20F; */
+    background-color: #FFB20F;
     height: 100%;
     font-size: 15px;
 }
@@ -48,7 +48,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 }
 @keyframes btn-origin{
     50%{
-    transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
@@ -138,6 +138,44 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     display:inline;
 }
 
+/* menu bar icon */
+.nav-menu-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    /* background-image: url('images/btn_about.png'); */
+    background-size: cover;
+    margin: 10px 10px;
+    position: relative;
+    /* transition: all 300ms 0s ease; */
+    transition-duration: 300ms;
+}
+.nav-menu-icon-after { 
+    /* width: 200px;
+    border-radius: 15px; */
+    transform: rotate(90deg);
+}
+
+.nav-icon-view-off {
+    opacity: 0;
+    display: none;
+}
+
+.nav-menu-icon a{
+    display: block;
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-decoration: none;
+    pointer-events:none;
+    border: 0;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
 
 
 /* 背景色設定 */
@@ -168,7 +206,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 
 
 /* カラフルなbackground コピペ */
-body {
+/* body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
@@ -197,4 +235,4 @@ h1 {
 	top: 45%;
 	right: 0;
 	left: 0;
-}
+} */

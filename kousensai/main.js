@@ -4,12 +4,17 @@ $(".nav-icon").click(function () {
 
 
 $(function () {
+    // debug中のみ必要
+    // $(".start").remove();
+    // $(".main").css("visibility", "visible");
+
     $(".main").css("visibility", "hidden");
     $("body").css("overflow", "hidden");
     // 時差で発動する
     setTimeout(function () {
         $('button').click();
     }, 2000);
+    
 
     $('#load').on('webkitAnimationEnd', function () {
         $('body').removeAttr('overflow-y');
