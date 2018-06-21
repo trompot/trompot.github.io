@@ -17,7 +17,7 @@ $(function(){
         
         // スクロール無効を解除する
         $(window).off('.noScroll');
-        fire();
+        // fire();
         $("body").css("overflow-y", "scroll");
         $(".main").css("visibility", "visible");
     });
