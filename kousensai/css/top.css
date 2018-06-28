@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+html, body{
+    overflow-x: hidden;
+}
+.title-logo{
+    color: aliceblue;
+}
+
+.title-logo h1{
+    /* font-size: 55px; */
+    color: #F79F1F;
+    font-family: "Noto Sans Japanese"; 
+    font: Black;
+}
+
+/* PC */
+@media(min-width: 768px){
+    .title-logo{
+        margin-top: 450px;
+        margin-left: 100px;
+    }
+    .title-logo h1{
+        font-size: 85px;
+    }
+    .title-logo span{
+        font-size: 35px;
+    }
+    .title-logo h4{
+        font-size: 35px;
+    }
+}
+
+/* スマホ */
+@media(max-width: 767px){
+    .title-logo{
+        margin-top: 45%;
+        text-align: center;
+    }
+    .title-logo h1{
+        font-size: 55px;
+    }
+    .title-logo span{
+        font-size: 25px;
+    }
+    .effect{
+        opacity: 0.1;
+    }
+}
+
+.comesoon{
+    color: #66CFE8;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* animation */
+.effect{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* background-color: #e84118; */
+    animation: pulsate 1s ease-out;
+    transition: color 0.3s ease 0s;
+}
+
+@keyframes pulsate {
+    0%   { 
+        transform: scale(1, 1);
+    }
+    50%  { 
+        opacity: 0.5; 
+        /* background-color: rgb(+10, +10, +10); */
+    }
+    100% { 
+        transform: scale(4, 4); 
+        opacity: 0.0;
+        /* background-color: rgb(+50, +50, +50); */
+    }
+}

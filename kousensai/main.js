@@ -2,6 +2,11 @@ $(".nav-icon").click(function () {
     location.href = $(this).attr("url");
 });
 
+//jQueryの場合
+$('.nav-icon').on('transitionend', function() {
+    // transition終了時の処理
+    // alert('transitionend');
+});
 
 $(function () {
     // debug中のみ必要
@@ -46,6 +51,7 @@ $('.btn-origin').click(function () {
 
 // step2の処理はここから
 function step2() { }
+
 
 
 // main処理

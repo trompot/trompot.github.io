@@ -11,7 +11,7 @@ html, body{
     font-family: 'MyFont';
     /* overflow-x: hidden; */
     overflow-y: hidden;
-    background-color: #FFB20F;
+    background-color: #2f3640;
     height: 100%;
     font-size: 15px;
 }
@@ -129,9 +129,11 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
 }
+
 .nav-icon p{
     opacity: 0;
     display: none;
+    transition-delay: 5s;
 }
 .nav-icon:hover p{
     opacity: 1;
@@ -164,7 +166,7 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 
 .nav-menu-icon a{
     display: block;
-    color: red;
+    color: white;
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -180,24 +182,23 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 
 /* 背景色設定 */
 .red{
-    background-color: #b20a01;
+    background-color: #EA2027;
 }
 .pink{
-    background-color: #ff70a6;
+    background-color: #EE5A24;
 }
 .orange{
-    background-color: #ff9f1c;
+    background-color: #F79F1F;
 }
 .blue{
-    background-color: #5ab1bb;
+    background-color: #1289A7;
 }
 .yellowgreen{
-    background-color: #849324;
+    background-color: #A3CB38;
 }
 .green{
-    background-color: #189918;
+    background-color: #009432;
 }
-
 
 
 

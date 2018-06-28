@@ -17,8 +17,9 @@ $(function () {
     // });
     
 });
-
-
+$('.nav-icon').click(function(){
+    alert('アホが見る');
+});
 // main処理
 
 
