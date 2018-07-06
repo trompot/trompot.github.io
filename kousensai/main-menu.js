@@ -28,3 +28,10 @@ $(window).on('touchmove.noScroll', function(e) {
 
 // スクロール無効を解除する
 $(window).off('.noScroll');
+
+
+// iOS判定
+const isIOS = /[ \(]iP/.test(navigator.userAgent)
+if (isIOS){
+    alert('hoge');
+}
