@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-html, body{
-    overflow-x: hidden;
-}
 .title-logo{
     color: aliceblue;
+    position: absolute;
 }
 
 .title-logo h1{
@@ -17,8 +15,9 @@ html, body{
 /* PC */
 @media(min-width: 768px){
     .title-logo{
-        margin-top: 450px;
+        /* margin-top: 450px; */
         margin-left: 100px;
+        bottom: 50px;
     }
     .title-logo h1{
         font-size: 85px;
@@ -29,6 +28,15 @@ html, body{
     .title-logo h4{
         font-size: 35px;
     }
+    .effect{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        /* background-color: #e84118; */
+        animation: pulsate 1s ease-out;
+        transition: color 0.3s ease 0s;
+    }
 }
 
 /* スマホ */
@@ -37,10 +45,10 @@ html, body{
         margin-top: 45%;
         text-align: center;
     }
-    .title-logo h1{
+    .title-logo h1 {
         font-size: 55px;
     }
-    .title-logo span{
+    .title-logo span {
         font-size: 25px;
     }
     .effect{
@@ -55,15 +63,7 @@ html, body{
 
 
 /* animation */
-.effect{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    /* background-color: #e84118; */
-    animation: pulsate 1s ease-out;
-    transition: color 0.3s ease 0s;
-}
+
 
 @keyframes pulsate {
     0%   { 

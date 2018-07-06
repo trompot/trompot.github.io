@@ -22,7 +22,6 @@ $(function(){
     if (isIOS){
         removeEffect();
     }
-
     effect_start('#effect');
     setTimeout(function(){
         effect_start('#effect2');

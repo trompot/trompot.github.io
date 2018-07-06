@@ -6,119 +6,123 @@
     <meta http-equiv="X-UA-Compatible">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width,height=device-height,user-scalable=0">
+
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
     <!-- Vue.js -->
     <script src="../../js/vue.min.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
 </head>
 
 <body>
-    <div class="page blue" id="about" data-section-name="about">
-        <!-- main -->
-        <div class="container main">
-            <h1>高専祭について</h1>
-            <!-- <div class="navigataion">
-                <nav>
-                    <div class="nav-menu-icon">
-                        <a href="#">
-                            <i class="fas fa-bars" id="nav"></i>
-                        </a>
-                    </div>
-                    <div class="nav-icon-view nav-icon-view-off">
-                        <div class="nav-icon blue" url="#about">
-                            <a href="#about">
-                                <i class="fas fa-code"></i>
-                                <p class="icon-text">高専祭について</p>
-                            </a>
-                        </div>
-                        <div class="nav-icon orange" url="#plan">
-                            <a href="#plan">
-                                <i class="fas fa-dice"></i>
-                                <p class="icon-text">企画</p>
-                            </a>
-                        </div>
-                        <div class="nav-icon green" url="#depart">
-                            <a href="#about">
-                                <i class="fas fa-flask"></i>
-                                <p class="icon-text">学科展示</p>
-                            </a>
-                        </div>
-                        <div class="nav-icon pink" url="#shop">
-                            <a href="#about">
-                                <i class="fas fa-coffee"></i>
-                                <p class="icon-text">模擬店</p>
-                            </a>
-                        </div>
-                        <div class="nav-icon yellowgreen" url="#other">
-                            <a href="#about">
-                                <i class="fas fa-puzzle-piece"></i>
-                                <p class="icon-text">その他展示</p>
-                            </a>
-                        </div>
-                        <div class="nav-icon red" url="#access">
-                            <a href="#about">
-                                <i class="fas fa-subway"></i>
-                                <p class="icon-text">アクセス</p>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div> -->
+    <div class="page grai" id="about" data-section-name="" style="overflow: hidden;">
+        <canvas id="hanabi"></canvas>
 
-            <!--  -->
-            <!-- <div class="nav-icon icon red" url="#access">
-                <a href="#about">
-                    <i class="fas fa-subway"></i>
-                    <br>
-                    <span class="icon-text">アクセス</span>
-                </a>
-            </div> -->
-
-        </div>
-
-    </div>
-
-    <div class="page orange" id="access" data-section-name="access">
-        <!-- main -->
-        <div class="container main">
-            <h1>About</h1>
-            <div class="nav-icon icon green" url="#depart">
-                <a href="#about">
-                    <i class="fas fa-flask"></i>
-                    <br>
-                    <span class="icon-text">学科展示</span>
-                </a>
+        <div class="container title-logo">
+            <div>
+                <h4>第52回奈良高専</h4>
+                <h1>高専祭</h1>
+                <span>2018.11.3~4</span>
+                <br>
+                <br>
+                <br>
+                <span class="comesoon">coming soon...</span>
             </div>
 
+            <!-- <div id="en">
+                <div id="effect"></div>
+                <div id="effect2"></div>
+                <div id="effect3"></div>
+            </div> -->
         </div>
 
+        <div class="nav-icon icon green" url="#depart">
+            <a href="#about">
+                <i class="fas fa-flask"></i>
+                <br>
+                <span class="icon-text">学科展示</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="page grai" id="about" data-section-name="about">
+        <div class="container main">
+            <div class="row">
+                <div class="" style="text-align: center;">
+                    <h1>高専祭について</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page grai" id="access" data-section-name="access">
+        <div class="container main animated">
+            <h1>アクセス</h1>
+            <div class="wow bouncelnRight" data-wow-delay="2s">駅から徒歩４日</div>
+        </div>
+    </div>
+
+    <div class="page orange" id="plan" data-section-name="plan">
+        <div class="container main animated">
+            <h1>企画</h1>
+            <div class="wow fadeIn">企画できない</div>
+        </div>
+    </div>
+    <div class="page green" id="depart" data-section-name="depart">
+        <div class="container main animated">
+            <h1>学科展示</h1>
+            <div class="wow fadeIn">学科展競争</div>
+        </div>
+    </div>
+
+    <div class="page pink" id="shop" data-section-name="shop">
+        <div class="container main animated">
+            <h1>模擬店</h1>
+
+            <div class="wow fadeIn" data-wow-delay="3s" data-wow-duration="5s" data-wow-iteration="10">模擬店チャンピオン</div>
+        </div>
+    </div>
+
+    <div class="page yellowgreen" id="other" data-section-name="other">
+        <div class="container main animated">
+            <h1>一般展示</h1>
+            <div class="wow fadeIn">the 高専</div>
+        </div>
     </div>
 
 
+    <!-- $('.icon').css('z-index', '-1'); -->
 
 
 
     <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
     <!-- scrollify -->
     <script src="js/jquery.scrollify.js"></script>
-    <!-- <script src="https://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script> -->
-    <script src="main-menu.js"></script>
 
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script src="main-menu.js"></script>
+    <script src="top.js"></script>
+
+    <script src="js/fire.js"></script>
     <script>
+
         $(function () {
+            new WOW().init();
             $.scrollify({
                 section: ".page",
-                sectionName : "section-name"
+                sectionName: "section-name"
             });
         });
     </script>
