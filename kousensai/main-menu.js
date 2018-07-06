@@ -17,9 +17,14 @@ $(function () {
     // });
     
 });
-$('.nav-icon').click(function(){
-    alert('アホが見る');
+// $('.nav-icon').click(function(){
+//     alert('アホが見る');
+// });
+
+// スクロールを無効にする
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
 });
-// main処理
 
-
+// スクロール無効を解除する
+$(window).off('.noScroll');
