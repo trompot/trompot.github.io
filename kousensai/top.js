@@ -54,3 +54,13 @@ function effect_end(id_name){
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+
+
+// iOS判定
+const isIOS = /[ \(]iP/.test(navigator.userAgent)
+
+if (isIOS){
+    $('#effect').remove();
+    $('#effect2').remove();
+    $('#effect3').remove();
+}

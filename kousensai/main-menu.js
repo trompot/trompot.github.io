@@ -30,8 +30,8 @@ $(window).on('touchmove.noScroll', function(e) {
 $(window).off('.noScroll');
 
 
-// iOS判定
-const isIOS = /[ \(]iP/.test(navigator.userAgent)
-if (isIOS){
-    alert('hoge');
-}
+// // iOS判定
+// const isIOS = /[ \(]iP/.test(navigator.userAgent)
+// if (isIOS){
+//     alert('hoge');
+// }
