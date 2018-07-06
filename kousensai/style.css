@@ -15,6 +15,10 @@ html, body{
     height: 100%;
     font-size: 15px;
 }
+body.modal-open {
+    overflow: hidden;
+    height: 100%;
+}
 
 /* IE8+, Chrome */
 input, button {
