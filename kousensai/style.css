@@ -10,14 +10,14 @@
 html, body{
     font-family: 'MyFont';
     /* overflow-x: hidden; */
-    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: #2f3640;
     height: 100%;
     font-size: 15px;
 }
-body.modal-open {
-    overflow: hidden;
-    height: 100%;
+
+nav{
+    width: 200px;
 }
 
 /* IE8+, Chrome */
@@ -108,19 +108,19 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     width: 80px;
     border-radius: 50%;
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
     /* background-image: url('images/btn_about.png'); */
     background-size: cover;
     margin: 10px 10px;
     position: relative;
-    transition: all 300ms 0s ease;
+    /* transition: all 200ms 0s ease; */
 }
-.nav-icon:hover{
+/* .nav-icon:hover{
     width: 200px;
     border-radius: 15px;
-}
+} */
 .nav-icon a{
-    display: block;
+    display: inline-block;
     color: white;
     font-size: 23px;
     position: absolute;
@@ -131,17 +131,18 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     pointer-events:none;
     border: 0;
     transform: translateY(-50%) translateX(-50%);
-    -webkit- transform: translateY(-50%) translateX(-50%);
+    /* -webkit- transform: translateY(-50%) translateX(-50%); */
+
 }
 
 .nav-icon p{
     opacity: 0;
     display: none;
-    transition-delay: 5s;
+    /* transition-delay: 5s; */
 }
 .nav-icon:hover p{
     opacity: 1;
-    display:inline;
+    display: inline;
 }
 
 /* menu bar icon */
@@ -155,7 +156,6 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     margin: 10px 10px;
     position: relative;
     /* transition: all 300ms 0s ease; */
-    transition-duration: 300ms;
 }
 .nav-menu-icon-after { 
     /* width: 200px;
@@ -182,6 +182,42 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
 }
+
+@media(min-width: 768px){
+    .page{
+        position: relative;
+        height: 100%;
+    }
+}
+@media(max-width: 767px){
+    .page{
+        position: relative;
+        height: -10px;
+    }
+}
+/* .page{
+    position: relative;
+    height: 100%;
+} */
+
+.icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    line-height: 0.9;
+}
+.icon i{
+    font-size: 30px;
+
+}
+.icon-text{
+    font-size: 14px;   
+}
+/* } */
 
 
 /* 背景色設定 */

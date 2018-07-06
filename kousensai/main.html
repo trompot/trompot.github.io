@@ -18,54 +18,83 @@
 </head>
 
 <body>
-    <!-- main -->
-    <div class="container main">
-        <div class="navigataion">
-            <nav>
-                <div class="nav-menu-icon">
-                    <a href="#">
-                        <i class="fas fa-bars" id="nav"></i>
-                    </a>
-                </div>
-                <div class="nav-icon-view nav-icon-view-off">
-                    <div class="nav-icon blue" url="#about">
-                        <a href="#about">
-                            <i class="fas fa-code"></i>
-                            <p>高専祭について</p>
+    <div class="page blue" id="about" data-section-name="about">
+        <!-- main -->
+        <div class="container main">
+            <h1>高専祭について</h1>
+            <!-- <div class="navigataion">
+                <nav>
+                    <div class="nav-menu-icon">
+                        <a href="#">
+                            <i class="fas fa-bars" id="nav"></i>
                         </a>
                     </div>
-                    <div class="nav-icon orange" url="#plan">
-                        <a href="#plan">
-                            <i class="fas fa-dice"></i>
-                            <p>企画</p>
-                        </a>
+                    <div class="nav-icon-view nav-icon-view-off">
+                        <div class="nav-icon blue" url="#about">
+                            <a href="#about">
+                                <i class="fas fa-code"></i>
+                                <p class="icon-text">高専祭について</p>
+                            </a>
+                        </div>
+                        <div class="nav-icon orange" url="#plan">
+                            <a href="#plan">
+                                <i class="fas fa-dice"></i>
+                                <p class="icon-text">企画</p>
+                            </a>
+                        </div>
+                        <div class="nav-icon green" url="#depart">
+                            <a href="#about">
+                                <i class="fas fa-flask"></i>
+                                <p class="icon-text">学科展示</p>
+                            </a>
+                        </div>
+                        <div class="nav-icon pink" url="#shop">
+                            <a href="#about">
+                                <i class="fas fa-coffee"></i>
+                                <p class="icon-text">模擬店</p>
+                            </a>
+                        </div>
+                        <div class="nav-icon yellowgreen" url="#other">
+                            <a href="#about">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <p class="icon-text">その他展示</p>
+                            </a>
+                        </div>
+                        <div class="nav-icon red" url="#access">
+                            <a href="#about">
+                                <i class="fas fa-subway"></i>
+                                <p class="icon-text">アクセス</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="nav-icon green" url="#depart">
-                        <a href="#about">
-                            <i class="fas fa-flask"></i>
-                            <p>学科展示</p>
-                        </a>
-                    </div>
-                    <div class="nav-icon pink" url="#shop">
-                        <a href="#about">
-                            <i class="fas fa-coffee"></i>
-                            <p>模擬店</p>
-                        </a>
-                    </div>
-                    <div class="nav-icon yellowgreen" url="#other">
-                        <a href="#about">
-                            <i class="fas fa-puzzle-piece"></i>
-                            <p>その他展示</p>
-                        </a>
-                    </div>
-                    <div class="nav-icon red" url="#access">
-                        <a href="#about">
-                            <i class="fas fa-subway"></i>
-                            <p>アクセス</p>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div> -->
+
+            <!--  -->
+            <!-- <div class="nav-icon icon red" url="#access">
+                <a href="#about">
+                    <i class="fas fa-subway"></i>
+                    <br>
+                    <span class="icon-text">アクセス</span>
+                </a>
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <div class="page orange" id="access" data-section-name="access">
+        <!-- main -->
+        <div class="container main">
+            <h1>About</h1>
+            <div class="nav-icon icon green" url="#depart">
+                <a href="#about">
+                    <i class="fas fa-flask"></i>
+                    <br>
+                    <span class="icon-text">学科展示</span>
+                </a>
+            </div>
+
         </div>
 
     </div>
@@ -75,17 +104,24 @@
 
 
     <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-
+    <!-- scrollify -->
+    <script src="js/jquery.scrollify.js"></script>
+    <!-- <script src="https://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script> -->
     <script src="main-menu.js"></script>
 
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".page",
+                sectionName : "section-name"
+            });
+        });
+    </script>
 </body>
 
 </html>

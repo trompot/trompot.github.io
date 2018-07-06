@@ -2,7 +2,7 @@ $(".nav-icon").click(function () {
     location.href = $(this).attr("url");
 });
 
-$("body").css("overflow-y", "scroll");
+// $("body").css("overflow-y", "scroll");
 
 $(".nav-menu-icon").click(function () {
     $(".nav-menu-icon").toggleClass("nav-menu-icon-after");
@@ -15,23 +15,25 @@ $(function () {
     // $(".nav-menu-icon").on('click mouseenter', function () {
     //     $(".nav-icon").remove();
     // });
-    
+
 });
+// $(function () {
+//     $.scrollify({
+//         section: ".page"
+//     });
+// });
 // $('.nav-icon').click(function(){
 //     alert('アホが見る');
 // });
 
-// スクロールを無効にする
-$(window).on('touchmove.noScroll', function(e) {
-    e.preventDefault();
-});
+// // スクロールを無効にする
+// $(window).on('touchmove.noScroll', function(e) {
+//     e.preventDefault();
+// });
 
 // スクロール無効を解除する
-$(window).off('.noScroll');
+// $(window).off('.noScroll');
 
 
-// // iOS判定
-// const isIOS = /[ \(]iP/.test(navigator.userAgent)
-// if (isIOS){
-//     alert('hoge');
-// }
+// hover検出
+// $('.icon-text').css();

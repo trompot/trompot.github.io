@@ -17,13 +17,19 @@ $('#effect3').on('animationend', function () {
     }, 400);
 });
 $(function(){
+    // iOS判定
+    const isIOS = /[ \(]iP/.test(navigator.userAgent)
+    if (isIOS){
+        removeEffect();
+    }
+
     effect_start('#effect');
     setTimeout(function(){
         effect_start('#effect2');
     }, 400);
     setTimeout(function(){
         effect_start('#effect3');
-    }, 800);
+    }, 900);
     // effect_start('#effect3');
     // effect_start();
 });
@@ -31,6 +37,7 @@ $(function(){
 var color = ['red', 'pink', 'orange', 'blue', 'yellowgreen', 'green'];
 
 function effect_start(id_name){
+    // 余白の値生成
     var top = getRandomInt(200);
     var left = getRandomInt(600);
     var col = getRandomInt(6);
@@ -55,11 +62,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-
-// iOS判定
-const isIOS = /[ \(]iP/.test(navigator.userAgent)
-
-if (isIOS){
+function removeEffect(){
     $('#effect').remove();
     $('#effect2').remove();
     $('#effect3').remove();
