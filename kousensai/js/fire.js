@@ -36,20 +36,25 @@ function sleep(waitSec, callbackFunc) {
     //   sleep(3, function() {
     //     fireMain();
     //   });
-      fire1();
-    setTimeout(function() {
-      fire2();
-    }, 2500);
+      // fire1();
+      console.log("死ぬ？");
+    // setTimeout(function() {
+    //   fire2();
+    // }, 2500);
   //   setTimeout(function() {
   //     fire3();
   //   }, 1200);
-    setTimeout(function() {
-      fireMain();
-    }, 5000);
+    // setTimeout(function() {
+    //   fireMain();
+    // }, 5000);
   }
   
   $(function() {
-    fireMain();
+    setInterval(function(){
+      console.log('死んで？');
+      // fire1();
+    }, 10000);
+    // fireMain();
   });
   
   // 花火1

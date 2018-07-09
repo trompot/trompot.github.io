@@ -13,6 +13,7 @@ body {
   /* background-color: #2f3640; */
   height: 100%;
   font-size: 15px;
+  color: #e6fafc;
 }
 
 nav {
@@ -28,6 +29,29 @@ button {
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
+}
+
+hr{
+  height: 5px;
+}
+
+
+.contents {
+  position: absolute;
+  /* background-color: #eaf8bf; */
+  margin-top: 5%;
+  left: 35px !important;
+  right: 30px !important;
+  padding-top: 30px;
+  /* width: 95%; */
+  height: 90%;
+}
+/* スマホ */
+@media (max-width: 767px) {
+  .contents,
+  h1 {
+    font-size: 30px;
+  }
 }
 
 /* step1 */
@@ -105,15 +129,16 @@ button::-moz-focus-inner {
 
 /* main */
 .nav-icon {
-  height: 80px;
-  width: 80px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   text-align: center;
   /* background-color: red; */
   /* background-image: url('images/btn_about.png'); */
   background-size: cover;
   margin: 10px 10px;
-  position: relative;
+  position: absolute;
+  bottom: 5px;
   /* transition: all 200ms 0s ease; */
 }
 /* .nav-icon:hover{
@@ -194,18 +219,14 @@ button::-moz-focus-inner {
     width: 100%;
   }
 }
-/* .page{
-    position: relative;
-    height: 100%;
-} */
 
 .icon {
-  height: 80px;
-  width: 80px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   text-align: center;
-  position: fixed;
-  bottom: 30px;
+  position: absolute;
+  bottom: 20px;
   right: 10px;
   line-height: 0.9;
 }
@@ -217,7 +238,7 @@ button::-moz-focus-inner {
 }
 /* } */
 
-/* 背景色設定 */
+/* 色設定 */
 .red {
   background-color: #ea2027;
 }
@@ -236,10 +257,23 @@ button::-moz-focus-inner {
 .green {
   background-color: #009432;
 }
-.grai{
-    background-color: #2f3640;
+.grai {
+  background-color: #2f3640;
+}
+.cream {
+  background-color: #e6fafc;
 }
 
+
+.t-orange{
+  color: #f79f1f;
+}
+.t-blue {
+  color: #1289a7;
+}
+.t-red {
+  color: #ea2027;
+}
 /* カラフルなbackground コピペ */
 /* body {
 	width: 100wh;
