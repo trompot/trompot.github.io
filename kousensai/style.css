@@ -4,6 +4,14 @@
   src: url(./font.ttf);
 }
 
+@font-face{
+  font-family: "HG";
+  src: url(./font/HGSoeiKakupoptai-01.ttf);
+  src: url(./font/HGPSoeiKakupoptai-02.ttf);
+  src: url(./font/HGSSoeiKakupoptai-03.ttf);
+  
+}
+
 html,
 body {
   font-family: "MyFont";
@@ -35,19 +43,37 @@ hr{
   height: 5px;
 }
 
+.theme h2, h1{
+  font-family: "HG";
+  display:inline;
+}
 
-.contents {
-  position: absolute;
-  /* background-color: #eaf8bf; */
-  margin-top: 5%;
-  left: 35px !important;
-  right: 30px !important;
-  padding-top: 30px;
-  /* width: 95%; */
-  height: 90%;
+
+/* PC/タブレット */
+@media (min-width: 768px) {
+  .contents {
+    position: absolute;
+    /* background-color: #eaf8bf; */
+    margin-top: 5%;
+    left: 10% !important;
+    right: 15% !important;
+    padding-top: 30px;
+    /* width: 95%; */
+    height: 90%;
+  }
 }
 /* スマホ */
 @media (max-width: 767px) {
+  .contents {
+    position: absolute;
+    /* background-color: #eaf8bf; */
+    margin-top: 5%;
+    left: 35px !important;
+    right: 30px !important;
+    padding-top: 30px;
+    /* width: 95%; */
+    height: 90%;
+  }
   .contents,
   h1 {
     font-size: 30px;
