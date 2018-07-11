@@ -10,13 +10,23 @@ $(".nav-menu-icon").click(function () {
     $("#nav").toggleClass("fa-times");
     $("#nav").toggleClass("fa-bars");
 });
+var i=0;
 $(function () {
     // menu nav関連処理
     // $(".nav-menu-icon").on('click mouseenter', function () {
     //     $(".nav-icon").remove();
     // });
+    
+    setInterval(load, 50);
 
 });
+function load(){
+    if(i < 101){
+    console.log(i)
+    $('#okokok').css({'width': i+'%'});
+    i += 1;
+    }
+}
 // $(function () {
 //     $.scrollify({
 //         section: ".page"

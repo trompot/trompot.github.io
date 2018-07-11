@@ -43,7 +43,7 @@ hr{
   height: 5px;
 }
 
-.theme h2, h1{
+h1.theme, h2.theme  {
   font-family: "HG";
   display:inline;
 }
@@ -54,10 +54,10 @@ hr{
   .contents {
     position: absolute;
     /* background-color: #eaf8bf; */
-    margin-top: 5%;
+    margin-top: 5% !important;
     left: 10% !important;
     right: 15% !important;
-    padding-top: 30px;
+    padding-top: 30px !important;
     /* width: 95%; */
     height: 90%;
   }
@@ -70,13 +70,17 @@ hr{
     margin-top: 5%;
     left: 35px !important;
     right: 30px !important;
-    padding-top: 30px;
+    padding-top: 30px !important;
     /* width: 95%; */
-    height: 90%;
+    min-height: 90% !important;
   }
   .contents,
   h1 {
     font-size: 30px;
+  }
+
+  .card, strong{
+    font-size: 15px;
   }
 }
 
@@ -243,6 +247,12 @@ hr{
 @media (max-width: 767px) {
   .page {
     width: 100%;
+    min-height: 100% !important;
+    max-height: auto !important;
+  }
+  #access{
+    min-height: 150%;
+    margin-top: 100px;
   }
 }
 
@@ -290,7 +300,9 @@ hr{
   background-color: #e6fafc;
 }
 
-
+.t-grai {
+  color: #2f3640;
+}
 .t-orange{
   color: #f79f1f;
 }
