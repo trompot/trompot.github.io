@@ -21,15 +21,16 @@
 </head>
 
 <body class="grai">
-    <div class="page grai" id="top" data-section-name="top" style="overflow: hidden;">
+    <!-- <div class="page grai" id="top" data-section-name="top" style="overflow: hidden;">
         <div class="container main">
             <div class="animated" style="display:inline;">
                 <h1 class="theme wow fadeInDown">熱狂！</h1>
                 <h2 class="theme">ウルトラ高専祭！</h2>
             </div>
         </div>
-    </div>
-    <div id="main">
+    </div> -->
+    
+    <!-- <div id="main"> -->
         <div class="page grai" id="about" data-section-name="" style="overflow: hidden;">
             <canvas id="hanabi"></canvas>
 
@@ -77,10 +78,32 @@
                             <!-- <div class="progress">
                             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="okokok"></div>
                         </div> -->
+                        <!-- <hr> -->
+                        <div>
+                            <br>
+                            <p>
+                                　今年度の高専祭実行委員長の中満悠人です。
+                                このたびは奈良高専祭公式サイトをご覧いただき、ありがとうございます。
+                                高専祭では学生主体で行われる様々な企画を用意しています。
+                                体育館内ステージでは軽音楽部や吹奏楽部による演奏や高専祭実行委員会によるステージ企画を行います。屋内の教室では各学科、クラブ団体の様々な特徴のある展示物や実験体験コーナーなどがある学科展が開催されます。屋外には各クラブ、同好会、各クラスなどの団体が出店している模擬店が並びます。学生だけでなく近隣にお住まいの方々、 子どもからお年寄りまで楽しめるお祭りになっております。
+                                今年の高専祭のテーマは「<strong class="theme t-orange">熱狂！ウルトラ高専祭！</strong>」に決まりました。皆さんに熱狂して楽しんでいただけるよう、
+                                私たちも努力を惜しまず準備を進めてまいります。みなさまのご来場を心よりお待ちしております！　
+                                最後になりましたが、高専祭の開催にあたり携わっていただきました教職員の皆様、学生のみなさん、全ての方々にこの場を借りて感謝申し上げます。
+
+                            </p>
+                        </div>
 
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="page grai" id="sub" data-section-name="top" style="overflow: hidden;">
+            <div class="container main">
+            </div>
+        </div>
+        <div class="page grai" id="sub" data-section-name="top" style="overflow: hidden;">
+            <div class="container main">
             </div>
         </div>
 
@@ -120,12 +143,16 @@
 
             </div>
         </div>
+        <div class="page grai" id="sub" data-section-name="top" style="overflow: hidden;">
+            <div class="container main">
+            </div>
+        </div>
 
         <!-- footer -->
         <footer class="fixed-bottom" style="text-align: center;">
             <p class="text-muted">&copy; 奈良高専祭実行委員会2018</p>
         </footer>
-    </div>
+    <!-- </div> -->
 
     <!-- <div class="page grai" id="plan" data-section-name="plan">
         <div class="container main animated">
@@ -177,20 +204,25 @@
     <script>
 
         $(function () {
-            $('#main').css('display', 'none');
+            // $('#sub').css('display', 'none');
             var ua = navigator.userAgent;
             if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-                // スマートフォン用コード
-
+                // $('#sub').css('display', 'none');
             } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
                 // タブレット用コード
             } else {
+                $('#sub').css('display', 'none');
                 new WOW().init();
                 $.scrollify({
                     section: ".page",
                     sectionName: "section-name"
                 });
             }
+            // new WOW().init();
+            //     $.scrollify({
+            //         section: ".page",
+            //         sectionName: "section-name"
+            //     });
 
 
         });

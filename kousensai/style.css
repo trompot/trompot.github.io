@@ -22,6 +22,7 @@ body {
   height: 100%;
   font-size: 15px;
   color: #e6fafc;
+  line-height: 300%;
 }
 
 nav {
@@ -47,6 +48,10 @@ h1.theme, h2.theme  {
   font-family: "HG";
   display:inline;
 }
+strong.theme{
+  font-family: "HG";
+  font-size: 150%;
+}
 
 
 /* PC/タブレット */
@@ -61,9 +66,22 @@ h1.theme, h2.theme  {
     /* width: 95%; */
     height: 90%;
   }
+  p{
+    font-size: 25px;
+  }
+  .card, strong{
+    font-size: 20px;
+  }
 }
 /* スマホ */
 @media (max-width: 767px) {
+  h1.theme{
+    font-size: 26px;
+  }
+  h2.theme{
+    font-size: 21px;
+  }
+
   .contents {
     position: absolute;
     /* background-color: #eaf8bf; */
@@ -72,7 +90,7 @@ h1.theme, h2.theme  {
     right: 30px !important;
     padding-top: 30px !important;
     /* width: 95%; */
-    min-height: 90% !important;
+    min-height: 100% !important;
   }
   .contents,
   h1 {
@@ -80,7 +98,10 @@ h1.theme, h2.theme  {
   }
 
   .card, strong{
-    font-size: 15px;
+    font-size: 18px;
+  }
+  p{
+    font-size: 20px;
   }
 }
 
@@ -242,13 +263,17 @@ h1.theme, h2.theme  {
   .page {
     height: 100%;
     z-index: 3;
+    /* position: relative; */
   }
 }
 @media (max-width: 767px) {
   .page {
     width: 100%;
     min-height: 100% !important;
-    max-height: auto !important;
+    top: 100px;
+    /* margin-top: 50% !important; */
+    /* max-height: auto !important; */
+    /* position: relative !important; */
   }
   #access{
     min-height: 150%;
