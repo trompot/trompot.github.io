@@ -211,9 +211,9 @@
             } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
                 // タブレット用コード
             } else {
-                $('#sub').css('display', 'none');
-                $('#sub1').css('display', 'none');
-                $('#sub2').css('display', 'none');
+                $('#sub').remove();
+                $('#sub1').remove();
+                $('#sub2').remove();
                 new WOW().init();
                 $.scrollify({
                     section: ".page",
