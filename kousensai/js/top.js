@@ -25,10 +25,10 @@ $(function(){
     effect_start('#effect');
     setTimeout(function(){
         effect_start('#effect2');
-    }, 400);
+    }, 600);
     setTimeout(function(){
         effect_start('#effect3');
-    }, 900);
+    }, 1000);
     // effect_start('#effect3');
     // effect_start();
 });
@@ -37,9 +37,9 @@ var color = ['red', 'pink', 'orange', 'blue', 'yellowgreen', 'green'];
 
 function effect_start(id_name){
     // 余白の値生成
-    var top = getRandomInt(200);
-    var left = getRandomInt(600);
-    var col = getRandomInt(6);
+    var top = getRandomInt(100);
+    var left = getRandomInt(800);
+    var col = getRandomInt(7);
     var tt = (top-200);
     if (id_name != '#effect'){
         left += 250;

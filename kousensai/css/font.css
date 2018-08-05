@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "MyFont";
+    /* font-family: YuGothic, Mac用 "Yu Gothic", Windows用 sans-serif; */
+    src: url(../font/font.ttf);
+}
+@font-face{
+    font-family: "Indie Flower";
+    /* font-family: IndieFlower, "IndieFlower", sans-serif; */
+    src: url(../font/IndieFlower.ttf);
+}
+@font-face{
+    font-family: "Noto Sans Japanese";
+    /* font-family: Noto Sans Japanese, "Noto Sans Japanese", ; */
+    src: url(../font/NotoSansCJKjp-Black.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-Bold.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-DemiLight.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-Light.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-Medium.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-Regular.otf) format("opentype");
+    src: url(../font/NotoSansCJKjp-Thin.otf) format("opentype");
+}
+@font-face{
+    font-family: "HG";
+    src: url(/font/HGSoeiKakupoptai-01.ttf)  format("opentype");
+    src: url(/font/HGPSoeiKakupoptai-02.ttf) format("opentype");
+    src: url(/font/HGSSoeiKakupoptai-03.ttf) format("opentype"); 
+}
+  
