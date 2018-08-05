@@ -1,14 +1,17 @@
 @font-face {
     font-family: "MyFont";
-    font-family: YuGothic, /* Mac用 */ "Yu Gothic", /* Windows用 */ sans-serif;
+    /* font-family: YuGothic, Mac用 "Yu Gothic", Windows用 sans-serif; */
     src: url(./font/font.ttf);
 }
 @font-face{
     font-family: "IndieFlower";
-    font-family: IndieFlower, "IndieFlower", sans-serif;
+    /* font-family: IndieFlower, "IndieFlower", sans-serif; */
     src: url(./font/IndieFlower.ttf);
 }
-  
+@font-face{
+    font-family: "Noto Sans Japanese";
+    /* font-family: Noto Sans Japanese, "Noto Sans Japanese", ; */
+}
 @font-face{
     font-family: "HG";
     src: url(./font/HGSoeiKakupoptai-01.ttf);
